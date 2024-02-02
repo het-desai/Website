@@ -1,0 +1,87 @@
+/* Contact form formating start here */
+.contact-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.contact-container > h5 {
+    color: red;
+    text-align: center;
+}
+
+.contact-form {
+    width: 100%;
+}
+
+.form-group {
+    margin: 10px;
+    text-align: center;
+}
+
+.form-group input,
+.form-group textarea {
+    text-decoration: none;
+    color: white;
+    background-color: #333333;
+    border: none;
+    border-bottom: 2px solid white; /* Initial border color */
+    -webkit-transition: border-bottom 0.3s ease;
+    -o-transition: border-bottom 0.3s ease;
+    transition: border-bottom 0.3s ease;
+    width: 40%; /* Adjust the width */
+    padding: 10px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+    outline: none;
+    font-size: 16px;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-bottom: 2px solid #39FF14; /* Neon green border color */
+}
+
+.form-group button {
+    text-decoration: none;
+    font-size: large;
+    cursor: pointer;
+    background-color: #333333;
+    color: white;
+    border: 2px solid white;
+    margin: 10px;
+    padding: 10px 10px;
+    -webkit-transition: background-color 0.3s, color 0.3s;
+    -o-transition: background-color 0.3s, color 0.3s;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.form-group button:hover {
+    background-color: #39FF14;
+    color: #333333; /* Dark text color on hover */
+}
+
+.form-group button:active {
+    background-color: #39FF14; /* Neon green background on click */
+    color: #333333; /* Dark text color on click */
+}
+
+/* Contact form formating end here */
+@media screen and (max-width: 768px) {
+
+    .contact-form {
+        width: 80%;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        width: 80%;
+    }
+}

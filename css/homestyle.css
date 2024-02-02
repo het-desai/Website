@@ -1,0 +1,147 @@
+/* General body formating start here */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu', 'Arial', sans-serif;
+    background-color: #333333;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+/* General body formating end here */
+
+/* First image division container start here */
+.image-division {
+    height: auto;
+    overflow: hidden;
+    position: relative;
+    margin: 1px;
+}
+
+.image-division img {
+    width: 100%;
+    height: 100vh;
+    -o-object-fit: cover;
+    object-fit: cover;
+    opacity: 0.4;
+}
+
+.text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+
+.text-overlay h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    cursor: default;
+}
+
+.text-overlay h1:hover,
+.text-overlay p:hover {
+    color: #39FF14;
+}
+
+.text-overlay p {
+    font-size: 1.2em;
+    cursor: default;
+}
+
+.down-arrow {
+    position: absolute;
+    bottom: 100px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+.down-arrow i {
+    font-size: 48px;
+    color: white;
+}
+/* First image division container end here */
+
+/* Title text formating start here */
+.title-text {
+    margin: 10px;
+    padding: 10px;
+    color: white;
+    text-align: center;
+}
+/* Title text formating end here */
+
+/* Second image and text division container start here */
+.content-division {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin: 1px;
+}
+
+.sub-division {
+    border: 2px solid black;
+    border-radius: 10px 10px;
+    margin: 20px 20px 20px 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    overflow: hidden;
+    -webkit-transition: background-color 0.3s;
+    -o-transition: background-color 0.3s;
+    transition: background-color 0.3s;
+}
+
+.sub-content {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    text-align: center;
+}
+
+.sub-content img {
+    width: 100%;
+    height: auto;
+    border: none;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.sub-content p {
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+}
+
+.sub-content:hover {
+    background-color: #39FF14;
+}
+/* Second image and text division container starts here */
+
+/* Screen adjustment formating start here */
+@media screen and (max-width: 768px) {
+    .content-division {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+}
+/* Screen adjustment formating end here */

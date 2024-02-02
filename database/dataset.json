@@ -1,0 +1,20 @@
+[
+    {
+        "plateform": "tryhackme",
+        "machine": "Mr. Robot",
+        "description": "TryHackMe: Mr. Robot walkthrough",
+        "url":"https://zeronumeric.medium.com/mr-robot-tryhackmectf-522584cf69f7"
+    },
+    {
+        "plateform": "miscellenaous",
+        "machine": "none",
+        "description": "I got a telegram message for a friendship and to share some experiences of life. Her first topic of conversation is cryptocurrency. Cheesy right? At first, I thought to say no but my cyber instinct say that it is a learning opportunity and it was. I thought she is a junior phisher. The detailed method of this scam is mentioned below with some tips and tricks you have to follow when you see around yourself or with your family member to stay safe from a scammer. The story has some phases with screenshots of our conversions.",
+        "url":"https://zeronumeric.medium.com/trainee-scammer-101-347e6f86d215"
+    },
+    {
+        "plateform": "ceh",
+        "machine": "none",
+        "description": "CEH Certificate experience, tips and tricks",
+        "url":"https://zeronumeric.medium.com/ceh-practical-exam-experience-and-tips-d8f944f96b38"
+    }
+]

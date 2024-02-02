@@ -1,0 +1,112 @@
+/* General styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu', 'Arial', sans-serif;
+    background-color: #333333;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; /* This line must for footer */
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; /* This line must for footer */
+    min-height: 100vh; /* This line must for footer */
+    margin: 0; /* This line must for footer */
+}
+
+.title-text {
+    margin: 10px;
+    padding: 10px;
+    color: white;
+    text-align: center;
+}
+
+
+/* blogs-container styling */
+.blogs-container {
+    text-align: center;
+    padding: 20px;
+    height: 72vh;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    overflow: auto;
+}
+
+/* Search bar styling */
+.search-bar {
+    margin-bottom: 20px;
+}
+
+.search-bar input {
+    padding: 10px;
+    margin-right: 10px;
+    width: 70%;
+    background-color: #333333;
+    border: none;
+    border-bottom: 2px solid white;
+    -webkit-transition: border-bottom 0.3s ease;
+    -o-transition: border-bottom 0.3s ease;
+    transition: border-bottom 0.3s ease;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    outline: none;
+    color: white;
+    font-size: 16px;
+}
+
+.search-bar input:focus {
+    border-bottom: 2px solid #39FF14;
+}
+
+/* Search results table styling */
+.result-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px; /* Adjust margin as needed */
+
+}
+
+.result-table th,
+.result-table td {
+    border: 1px solid white; /* Adjust border color as needed */
+    padding: 10px;
+    text-align: left;
+    text-decoration: none;
+    color: white;
+}
+
+.result-table th:first-child,
+.result-table td:first-child {
+    width: 10%;
+    text-align: center;
+}
+
+.result-table th:last-child,
+.result-table td:last-child {
+    width: 90%;
+}
+
+.result-table tbody>tr:nth-child(odd) {
+    background-color: #222;
+}
+
+.result-table tbody>tr:nth-child(even) {
+    background-color: #333;
+}
+
+.result-table td a {
+    text-decoration: none;
+    color: inherit; /* Use the same color as the parent to maintain consistency */
+}
+
+.result-table tbody>tr:hover td {
+    background-color: #39FF14;
+    color: black;
+    cursor: pointer;
+}
+
+.result-table td:hover {
+    text-decoration: none;
+}
