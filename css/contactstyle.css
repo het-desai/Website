@@ -12,11 +12,6 @@
     align-items: center;
 }
 
-.contact-container > h5 {
-    color: red;
-    text-align: center;
-}
-
 .contact-form {
     width: 100%;
 }
