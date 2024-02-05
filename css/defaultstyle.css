@@ -99,6 +99,7 @@ footer {
 
 /* Social Media styling ends here */
 .copyrightmarks p {
+    margin: 10px;
     color: white;
     font-weight: bold;
     font-size: 18px;
