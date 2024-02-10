@@ -7,14 +7,32 @@
     },
     {
         "plateform": "miscellenaous",
-        "machine": "none",
+        "machine": "-",
         "description": "I got a telegram message for a friendship and to share some experiences of life. Her first topic of conversation is cryptocurrency. Cheesy right? At first, I thought to say no but my cyber instinct say that it is a learning opportunity and it was. I thought she is a junior phisher. The detailed method of this scam is mentioned below with some tips and tricks you have to follow when you see around yourself or with your family member to stay safe from a scammer. The story has some phases with screenshots of our conversions.",
         "url":"https://zeronumeric.medium.com/trainee-scammer-101-347e6f86d215"
     },
     {
         "plateform": "ceh",
-        "machine": "none",
+        "machine": "-",
         "description": "CEH Certificate experience, tips and tricks",
         "url":"https://zeronumeric.medium.com/ceh-practical-exam-experience-and-tips-d8f944f96b38"
+    },
+    {
+        "plateform": "hackthebox",
+        "machine": "Bizness",
+        "description": "The ofbiz framework is vulnerable to cve-2023-49070, leading to Remote Code Execution (RCE). This vulnerability grants unauthorized user access, eventually revealing the root password stored in a file in base64 url-safe encoded form. Once decoded, a weakly encrypted sha1 hash is exposed, which can be cracked using hashcat to obtain the root password",
+        "url":"https://github.com/het-desai/hackthebox/tree/main/bizness/write-up.md"
+    },
+    {
+        "plateform": "-",
+        "machine": "-",
+        "description": "Python cheatsheet",
+        "url":"https://xmind.ai/share/4WRGg1ds?xid=bHt93b7c"
+    },
+    {
+        "plateform": "-",
+        "machine": "-",
+        "description": "Debian linux cheatsheet",
+        "url":"https://xmind.ai/share/JEYJmftl?xid=aMYhUbZ6"
     }
 ]
