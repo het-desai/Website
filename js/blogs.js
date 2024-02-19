@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', async function () {
     if (searchInput) {
         searchInput.addEventListener('input', function () {
             const searchTerm = searchInput.value.trim();
-            const sanitizedSearchTerm = searchTerm.replace(/[^a-zA-Z0-9.\s]/g, '');
+            const sanitizedSearchTerm = searchTerm.replace(/[^a-zA-Z0-9.\s-]/g, '');
             console.log(sanitizedSearchTerm);
             if (sanitizedSearchTerm.length >= 4) {
                 const filteredRepos = filterRepos(repos, sanitizedSearchTerm);

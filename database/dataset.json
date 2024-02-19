@@ -34,5 +34,11 @@
         "machine": "-",
         "description": "Debian linux cheatsheet",
         "url":"https://xmind.ai/share/JEYJmftl?xid=aMYhUbZ6"
+    },
+    {
+        "plateform": "hackthebox",
+        "machine": "Devvortex",
+        "description": "The nmap found open ports 22 and 80. DNS brute force uncovered a subdomain using gobuster for file discovery. Exploiting a Joombla CMS vulnerability (CVE-2023-23752) granted access to the Administrator page, enabling unauthorized content exploitation and data entry. After login, a web shell was established, mysql database accessed, and a user's password hash cracked with JohnTheRipper. Root access was achieved through sudo-accessible root programs, leading to privilege escalation via apport-cli.",
+        "url":"https://github.com/het-desai/hackthebox/tree/main/devvortex/write-up.md"
     }
 ]
