@@ -36,9 +36,21 @@
         "url":"https://xmind.ai/share/JEYJmftl?xid=aMYhUbZ6"
     },
     {
+        "plateform": "-",
+        "machine": "-",
+        "description": "Bash Scripting cheatsheet",
+        "url":"https://xmind.ai/share/2VOpyU3T?xid=tL8xXVig"
+    },
+    {
         "plateform": "hackthebox",
         "machine": "Devvortex",
         "description": "The nmap found open ports 22 and 80. DNS brute force uncovered a subdomain using gobuster for file discovery. Exploiting a Joombla CMS vulnerability (CVE-2023-23752) granted access to the Administrator page, enabling unauthorized content exploitation and data entry. After login, a web shell was established, mysql database accessed, and a user's password hash cracked with JohnTheRipper. Root access was achieved through sudo-accessible root programs, leading to privilege escalation via apport-cli.",
         "url":"https://github.com/het-desai/hackthebox/tree/main/devvortex/write-up.md"
+    },
+    {
+        "plateform": "hackthebox",
+        "machine": "Codify",
+        "description": "The exploration of the Codify machine, a comprehensive Nmap scan unraveled the intricacies of its technological landscape, revealing open ports 22, 80, 3000, and 8000. Our attention shifted to the web applications on ports 80 and 3000, particularly focusing on the captivating codify.htb. Unveiling a critical Node.js vulnerability (CVE-2023-30547) associated with the vm2 library, we crafted a proof-of-concept (PoC) payload, securing a web shell and initiating user-level access. Delving into a web application at /var/www/contact, we deciphered a login mechanism, cracked a user's password, and ascended to root through a sudo-accessible script—culminating in a detailed technical exploration on Codify.",
+        "url":"https://github.com/het-desai/hackthebox/tree/main/codify/write-up.md"
     }
 ]
