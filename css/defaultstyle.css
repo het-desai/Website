@@ -24,7 +24,11 @@ nav {
 }
 
 /* navBar: Logo Image */
-.logo img {
+.logo a {
+    cursor: default;
+}
+
+.logo a > img {
     max-height: 40px;
     margin-right: 20px;
 }
