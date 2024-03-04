@@ -34,7 +34,7 @@ function displayRepos(filteredEntries) {
 
         filteredEntries.forEach(entry => {
             const row = document.createElement('tr');
-            row.innerHTML = `<td><a href="${entry.url}" target="_blank">${entry.plateform}</a></td><td><a href="${entry.url}" target="_blank">${entry.description || 'No description'}</a></td>`;
+            row.innerHTML = `<td><a href="${entry.url}" target="_blank">${entry.machine}</a></td><td><a href="${entry.url}" target="_blank">${entry.description || 'No description'}</a></td>`;
             tableBody.appendChild(row);
         });
     } else {
