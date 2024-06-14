@@ -97,7 +97,6 @@ body {
 }
 
 .sub-division {
-    border: 2px solid black;
     border-radius: 10px 10px;
     margin: 20px 20px 20px 20px;
     display: -webkit-box;
@@ -119,19 +118,26 @@ body {
 .sub-content img {
     width: 100%;
     height: auto;
+    aspect-ratio: 3/2;
+    -o-object-fit: contain;
+        object-fit: contain;
     border: none;
-    border-radius: 5px;
+    /* border-radius: 5px; */
     overflow: hidden;
 }
 
 .sub-content p {
     text-decoration: none;
     color: white;
-    font-size: 12px;
+    font-size: 16px;
 }
 
 .sub-content:hover {
     background-color: #39FF14;
+}
+
+.sub-content:hover p {
+    color: #333333;
 }
 /* Second image and text division container starts here */
 

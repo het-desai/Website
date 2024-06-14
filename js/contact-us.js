@@ -15,67 +15,69 @@ document.addEventListener('DOMContentLoaded', function () {
         const lastNameInput = form.querySelector('input[name="last_name"]');
         const emailInput = form.querySelector('input[name="email"]');
         const subjectInput = form.querySelector('input[name="subject"]');
-        const textarea = form.querySelector('textarea');
+        const messageInput = form.querySelector('textarea[name="message"]');
 
-        // Sanitize and validate first name
-        const sanitizedFirstName = sanitizeAndValidateInput(firstNameInput.value);
-        firstNameInput.value = sanitizedFirstName;
-
-        // Sanitize and validate last name
-        const sanitizedLastName = sanitizeAndValidateInput(lastNameInput.value);
-        lastNameInput.value = sanitizedLastName;
-
-        // Sanitize and validate email
+        // Sanitize inputs
+        const sanitizedFirstName = sanitizeInput(firstNameInput.value);
+        const sanitizedLastName = sanitizeInput(lastNameInput.value);
         const sanitizedEmail = sanitizeAndValidateEmail(emailInput.value);
-        emailInput.value = sanitizedEmail;
+        const sanitizedSubject = sanitizeInput(subjectInput.value);
+        const sanitizedMessage = sanitizeInput(messageInput.value);
 
-        // Sanitize and validate subject
-        const sanitizedSubject = sanitizeAndValidateInput(subjectInput.value);
+        // Update input values with sanitized versions
+        firstNameInput.value = sanitizedFirstName;
+        lastNameInput.value = sanitizedLastName;
+        emailInput.value = sanitizedEmail !== null ? sanitizedEmail : '';
         subjectInput.value = sanitizedSubject;
+        messageInput.value = sanitizedMessage;
 
-        // Sanitize and validate textarea
-        const sanitizedTextarea = sanitizeAndValidateInput(textarea.value);
-        textarea.value = sanitizedTextarea;
-
-        // If validation fails, display an alert message
+        // Define error messages
         const errorMessages = {
-            'first_name': 'First name only alphabets, numbers, space, and (.) dot',
-            'last_name': 'Last name only alphabets, numbers, space, and (.) dot',
-            'email': 'Invalid Email',
-            'subject': 'Subject only alphabets, numbers, space, and (.) dot',
-            'textarea': 'Message only alphabets, numbers, space, and (.) dot',
+            'first_name': 'First name should contain only alphabets, numbers, spaces, and dots.',
+            'last_name': 'Last name should contain only alphabets, numbers, spaces, and dots.',
+            'email': 'Invalid email address.',
+            'subject': 'Subject should contain only alphabets, numbers, spaces, and dots.',
+            'message': 'Message should contain only alphabets, numbers, spaces, and dots.',
         };
 
         // Check each input and show alerts if invalid
-        for (const [inputName, inputValue] of Object.entries({
+        const inputsToValidate = {
             'first_name': sanitizedFirstName,
             'last_name': sanitizedLastName,
             'email': sanitizedEmail,
             'subject': sanitizedSubject,
-            'textarea': sanitizedTextarea,
-        })) {
-            if (!isValidInput(inputValue)) {
+            'message': sanitizedMessage,
+        };
+
+        for (const [inputName, inputValue] of Object.entries(inputsToValidate)) {
+            if (!isValidInput(inputValue, inputName)) {
                 alert(errorMessages[inputName]);
                 return; // Stop processing further if any input is invalid
             }
         }
+
         form.submit();
     }
 
-    function sanitizeAndValidateInput(input) {
+    function sanitizeInput(input) {
         // Allow alphabets, numbers, spaces, dots
         return input.replace(/[^a-zA-Z0-9\s.]/g, '');
     }
 
     function sanitizeAndValidateEmail(email) {
-        // Allow alphabets, numbers, @, -, +
-        return email.replace(/[^a-zA-Z0-9@\-+.]/g, '');
+        // Allow alphabets, numbers, @, -, +, ., and _
+        const sanitizedEmail = email.replace(/[^a-zA-Z0-9@\-+._]/g, '');
+        return isValidEmail(sanitizedEmail) ? sanitizedEmail : ''; // Return empty string if invalid
     }
 
-    function isValidInput(input) {
-        // You can add more complex validation logic here if needed
-        // For now, let's consider it valid if it's not empty
-        return input.trim() !== '';
+    function isValidInput(input, inputName) {
+        // Check if input is not empty
+        if (input.trim() === '') return false;
+
+        // Additional validation for specific fields
+        if (inputName === 'email' && input === '') return false; // Check for empty email string
+
+        return true;
     }
 
     function isValidEmail(email) {
