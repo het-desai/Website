@@ -34,7 +34,16 @@ function displayRepos(filteredEntries) {
 
         filteredEntries.forEach(entry => {
             const row = document.createElement('tr');
-            row.innerHTML = `<td><a href="${entry.url}" target="_blank">${entry.machine}</a></td><td><a href="${entry.url}" target="_blank">${entry.description || 'No description'}</a></td>`;
+            row.innerHTML = `<td>${entry.machine || entry.plateform}</td><td>${entry.description || 'No description'}</td>`;
+            
+            // Add a click event listener to the row
+            row.addEventListener('click', () => {
+                window.open(entry.url, '_blank');
+            });
+
+            // Add a class to indicate it's clickable (optional)
+            row.classList.add('clickable-row');
+
             tableBody.appendChild(row);
         });
     } else {

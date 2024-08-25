@@ -88,25 +88,23 @@ body {
     width: 90%;
 }
 
-.result-table tbody>tr:nth-child(odd) {
+/* Maintain odd/even row colors */
+.result-table tbody > tr:nth-child(odd) {
     background-color: #222;
 }
 
-.result-table tbody>tr:nth-child(even) {
+.result-table tbody > tr:nth-child(even) {
     background-color: #333;
 }
 
-.result-table td a {
-    text-decoration: none;
-    color: inherit; /* Use the same color as the parent to maintain consistency */
-}
-
-.result-table tbody>tr:hover td {
+/* Add hover effect for clickable rows */
+.result-table tbody > tr:hover td {
     background-color: #39FF14;
     color: black;
     cursor: pointer;
 }
 
-.result-table td:hover {
-    text-decoration: none;
+/* Optional: Add a pointer cursor to clickable rows */
+.clickable-row {
+    cursor: pointer;
 }
