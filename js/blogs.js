@@ -70,3 +70,26 @@ document.addEventListener('DOMContentLoaded', async function () {
         });
     }
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    const searchInput = document.querySelector('.search-bar input');
+    const placeholderTexts = [
+        "Eg.: tryhackme", 
+        "Eg.: hackthebox", 
+        "Eg.: cheat sheet",
+        "Eg.: blog",
+        "Eg.: certificate"
+    ];
+    let currentIndex = 0;
+
+    function updatePlaceholder() {
+        searchInput.setAttribute('placeholder', placeholderTexts[currentIndex]);
+        currentIndex = (currentIndex + 1) % placeholderTexts.length; // Loop through the array
+    }
+
+    // Update placeholder every 2 seconds (2000ms)
+    setInterval(updatePlaceholder, 2000);
+
+    // Set initial placeholder
+    updatePlaceholder();
+});
