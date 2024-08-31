@@ -26,20 +26,20 @@
     {
         "plateform": "Cheat Sheet",
         "machine": "",
-        "description": "Python cheatsheet",
-        "url":"https://xmind.ai/share/4WRGg1ds?xid=bHt93b7c"
+        "description": "Python cheat sheet",
+        "url":"https://xmind.ai/share/4WRGg1ds"
     },
     {
         "plateform": "Cheat Sheet",
         "machine": "",
-        "description": "Debian linux cheatsheet",
-        "url":"https://xmind.ai/share/JEYJmftl?xid=aMYhUbZ6"
+        "description": "Debian linux cheat sheet",
+        "url":"https://xmind.ai/share/JEYJmftl"
     },
     {
         "plateform": "Cheat Sheet",
         "machine": "",
-        "description": "Bash Scripting cheatsheet",
-        "url":"https://xmind.ai/share/2VOpyU3T?xid=tL8xXVig"
+        "description": "Bash Scripting cheat sheet",
+        "url":"https://xmind.ai/share/2VOpyU3T"
     },
     {
         "plateform": "HackTheBox",
@@ -58,5 +58,35 @@
         "machine": "Cozyhosting",
         "description": "The initial scan using Nmap reveals open ports, including SSH and an nginx server hosting a web app built with the SpringBoot framework. The walkthrough focuses on exploring this web application, using tools like Ffuf to discover valuable endpoints such as '/actuator/sessions'. This reveals an exploitable session ID vulnerability, allowing the attacker to manipulate cookies creatively and gain access to an admin page, establishing a foothold. The write-up covers two lateral movement methods, specifically the extraction of a jar file. Within these files discovers the username and password for a Postgres database, providing further access. Following the escalation path, the guide demonstrates the cracking of the admin user's password hash, granting access to the josh user. Privilege escalation then reveals superuser permissions for the SSH command, ultimately achieving a root shell using a clever technique documented in GTFOBins.",
         "url":"https://github.com/het-desai/hackthebox/blob/main/cozyhosting/write-up.md"
+    },
+    {
+        "plateform": "Cheat Sheet",
+        "machine": "",
+        "description": "Windows CMD/Powershell cheat sheet",
+        "url":"https://xmind.ai/share/HLCwtteP"
+    },
+    {
+        "plateform": "Cheat Sheet",
+        "machine": "",
+        "description": "AD PenTesting cheat sheet",
+        "url":"https://xmind.ai/share/hN79m4dx"
+    },
+    {
+        "plateform": "Cheat Sheet",
+        "machine": "",
+        "description": "Wireless PenTesting cheat sheet",
+        "url":"https://xmind.ai/share/uNCHVISl"
+    },
+    {
+        "plateform": "Cheat Sheet",
+        "machine": "",
+        "description": "Cisco Switch Configuration cheat sheet",
+        "url":"https://xmind.ai/share/DDs4cfPx"
+    },
+    {
+        "plateform": "Cheat Sheet",
+        "machine": "",
+        "description": "Docker Terminal and Configuration file's commands cheat sheet",
+        "url":"https://xmind.ai/share/nDuamGoo"
     }
 ]
