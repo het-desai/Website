@@ -60,6 +60,12 @@
         "url":"https://github.com/het-desai/hackthebox/blob/main/cozyhosting/write-up.md"
     },
     {
+        "plateform": "HackTheBox",
+        "machine": "Escape",
+        "description": "Compromised MSSQL via weak credentials and NetNTLM hash capture through Responder. Escalated to domain admin by exploiting AD CS ESC1 misconfigurations using Certipy to request and authenticate with a forged administrator certificate.",
+        "url":"https://github.com/het-desai/hackthebox/blob/main/escape/write-up.md"
+    },
+    {
         "plateform": "Cheat Sheet",
         "machine": "",
         "description": "Windows CMD/Powershell cheat sheet",
