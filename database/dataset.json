@@ -66,6 +66,12 @@
         "url":"https://github.com/het-desai/hackthebox/blob/main/escape/write-up.md"
     },
     {
+        "plateform": "HackTheBox",
+        "machine": "Active",
+        "description": "The Nmap scan reveals typical Active Directory ports, including SMB, Kerberos, and LDAP. SMB enumeration leads to the discovery of user accounts, and access to the Replication share reveals a Group Policy Preference (GPP) XML file containing a cpassword. Decrypting it provides valid user-level credentials. AS-REP Roasting is then performed against another user without Kerberos preauthentication, and the cracked hash yields credentials with administrative privileges",
+        "url":"https://github.com/het-desai/hackthebox/blob/main/active/write-up.md"
+    },
+    {
         "plateform": "Cheat Sheet",
         "machine": "",
         "description": "Windows CMD/Powershell cheat sheet",
