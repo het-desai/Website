@@ -100,5 +100,11 @@
         "machine": "",
         "description": "Docker Terminal and Configuration file's commands cheat sheet",
         "url":"https://xmind.ai/share/nDuamGoo"
+    },
+    {
+        "plateform": "Offsec",
+        "machine": "Levram",
+        "description": "An Nmap scan revealed open port 8000 hosting a Gerapy web application. Default admin credentials provided access to the panel, where an authenticated RCE exploit (CVE-2021-43857) was leveraged to gain an initial foothold. After stabilizing the shell, local enumeration uncovered two privilege escalation vectors: a python3.10 binary with the cap_setuid=ep capability and a plaintext root password stored in a systemd service file. Exploiting either path granted root privileges and full system compromise on Levram.",
+        "url":"https://github.com/het-desai/Offsec-CTF/blob/main/Practice/Levram/write-up.md"
     }
 ]
