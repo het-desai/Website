@@ -78,7 +78,8 @@ document.addEventListener('DOMContentLoaded', function() {
         "Eg.: hackthebox", 
         "Eg.: cheat sheet",
         "Eg.: blog",
-        "Eg.: certificate"
+        "Eg.: certificate",
+        "Eg.: offsec"
     ];
     let currentIndex = 0;
 
