@@ -106,5 +106,17 @@
         "machine": "Levram",
         "description": "An Nmap scan revealed open port 8000 hosting a Gerapy web application. Default admin credentials provided access to the panel, where an authenticated RCE exploit (CVE-2021-43857) was leveraged to gain an initial foothold. After stabilizing the shell, local enumeration uncovered two privilege escalation vectors: a python3.10 binary with the cap_setuid=ep capability and a plaintext root password stored in a systemd service file. Exploiting either path granted root privileges and full system compromise on Levram.",
         "url":"https://github.com/het-desai/Offsec-CTF/blob/main/Practice/Levram/write-up.md"
+    },
+    {
+        "plateform": "Offsec",
+        "machine": "Internal",
+        "description": "This report documents the successful compromise of a Windows Server 2008 Internal machine from the OffSec Practice lab. The system was vulnerable to the SMBv2 Negotiation Vulnerability (CVE-2009-3103), which allowed unauthenticated remote code execution. Using Metasploit, SYSTEM-level access was achieved, and the proof file was retrieved. The exercise highlights the risks of unpatched legacy SMB services and the importance of timely vulnerability management.",
+        "url":"https://github.com/het-desai/Offsec-CTF/blob/main/Practice/Internal/write-up.md"
+    },
+    {
+        "plateform": "Offsec",
+        "machine": "Algernon",
+        "description": "This report outlines the compromise of the Algernon machine from the OffSec Practice lab through a structured enumeration and exploitation workflow. A thorough port scan revealed an exposed .NET Remoting service on port 17001, which led to the identification of an unauthenticated SmarterMail RCE vulnerability (CVE-2019-7214). Using a publicly available exploit, SYSTEM‑level access was obtained and the proof file was retrieved. The assessment highlights the value of comprehensive enumeration and targeted vulnerability research when attacking Windows-based systems.",
+        "url":"https://github.com/het-desai/Offsec-CTF/blob/main/Practice/Algernon/write-up.md"
     }
 ]
