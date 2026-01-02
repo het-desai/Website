@@ -1,6 +1,6 @@
 [
     {
-        "plateform": "TryHackMe",
+        "plateform": "Blog",
         "machine": "Mr. Robot",
         "description": "TryHackMe: Mr. Robot walkthrough",
         "url":"https://zeronumeric.medium.com/mr-robot-tryhackmectf-522584cf69f7"
@@ -21,7 +21,7 @@
         "plateform": "HackTheBox",
         "machine": "Bizness",
         "description": "The ofbiz framework is vulnerable to cve-2023-49070, leading to Remote Code Execution (RCE). This vulnerability grants unauthorized user access, eventually revealing the root password stored in a file in base64 url-safe encoded form. Once decoded, a weakly encrypted sha1 hash is exposed, which can be cracked using hashcat to obtain the root password",
-        "url":"https://github.com/het-desai/hackthebox/blob/main/bizness/write-up.md"
+        "url":"https://raw.githubusercontent.com/het-desai/hackthebox/refs/heads/main/bizness/write-up.md"
     },
     {
         "plateform": "Cheat Sheet",
@@ -45,31 +45,37 @@
         "plateform": "HackTheBox",
         "machine": "Devvortex",
         "description": "The nmap found open ports 22 and 80. DNS brute force uncovered a subdomain using gobuster for file discovery. Exploiting a Joombla CMS vulnerability (CVE-2023-23752) granted access to the Administrator page, enabling unauthorized content exploitation and data entry. After login, a web shell was established, mysql database accessed, and a user's password hash cracked with JohnTheRipper. Root access was achieved through sudo-accessible root programs, leading to privilege escalation via apport-cli.",
-        "url":"https://github.com/het-desai/hackthebox/blob/main/devvortex/write-up.md"
+        "url":"https://raw.githubusercontent.com/het-desai/hackthebox/refs/heads/main/devvortex/write-up.md"
     },
     {
         "plateform": "HackTheBox",
         "machine": "Codify",
         "description": "The exploration of the Codify machine, a comprehensive Nmap scan unraveled the intricacies of its technological landscape, revealing open ports 22, 80, 3000, and 8000. Our attention shifted to the web applications on ports 80 and 3000, particularly focusing on the captivating codify.htb. Unveiling a critical Node.js vulnerability (CVE-2023-30547) associated with the vm2 library, we crafted a proof-of-concept (PoC) payload, securing a web shell and initiating user-level access. Delving into a web application at /var/www/contact, we deciphered a login mechanism, cracked a user's password, and ascended to root through a sudo-accessible script—culminating in a detailed technical exploration on Codify.",
-        "url":"https://github.com/het-desai/hackthebox/blob/main/codify/write-up.md"
+        "url":"https://raw.githubusercontent.com/het-desai/hackthebox/refs/heads/main/codify/write-up.md"
     },
     {
         "plateform": "HackTheBox",
         "machine": "Cozyhosting",
         "description": "The initial scan using Nmap reveals open ports, including SSH and an nginx server hosting a web app built with the SpringBoot framework. The walkthrough focuses on exploring this web application, using tools like Ffuf to discover valuable endpoints such as '/actuator/sessions'. This reveals an exploitable session ID vulnerability, allowing the attacker to manipulate cookies creatively and gain access to an admin page, establishing a foothold. The write-up covers two lateral movement methods, specifically the extraction of a jar file. Within these files discovers the username and password for a Postgres database, providing further access. Following the escalation path, the guide demonstrates the cracking of the admin user's password hash, granting access to the josh user. Privilege escalation then reveals superuser permissions for the SSH command, ultimately achieving a root shell using a clever technique documented in GTFOBins.",
-        "url":"https://github.com/het-desai/hackthebox/blob/main/cozyhosting/write-up.md"
+        "url":"https://raw.githubusercontent.com/het-desai/hackthebox/refs/heads/main/cozyhosting/write-up.md"
     },
     {
         "plateform": "HackTheBox",
         "machine": "Escape",
         "description": "Compromised MSSQL via weak credentials and NetNTLM hash capture through Responder. Escalated to domain admin by exploiting AD CS ESC1 misconfigurations using Certipy to request and authenticate with a forged administrator certificate.",
-        "url":"https://github.com/het-desai/hackthebox/blob/main/escape/write-up.md"
+        "url":"https://raw.githubusercontent.com/het-desai/hackthebox/refs/heads/main/escape/write-up.md"
+    },
+    {
+        "plateform": "HackTheBox",
+        "machine": "EscapeTwo",
+        "description": "This assessment focuses on the enumeration of an Active Directory–based target on the Hack The Box network, using tools such as Nmap, smbmap, smbclient, CrackMapExec, and Impacket to identify exposed services and misconfigurations. Detailed inspection of SMB shares led to the extraction and recovery of corrupted XLSX files containing valid domain credentials. These findings provided a clear foothold for deeper access and set the stage for further exploitation and privilege escalation. The exercise highlights how thorough enumeration and careful artifact analysis can uncover weak credential practices and indirect attack paths in AD environments.",
+        "url":"https://raw.githubusercontent.com/het-desai/hackthebox/refs/heads/main/escapetwo/write-up.md"
     },
     {
         "plateform": "HackTheBox",
         "machine": "Active",
         "description": "The Nmap scan reveals typical Active Directory ports, including SMB, Kerberos, and LDAP. SMB enumeration leads to the discovery of user accounts, and access to the Replication share reveals a Group Policy Preference (GPP) XML file containing a cpassword. Decrypting it provides valid user-level credentials. AS-REP Roasting is then performed against another user without Kerberos preauthentication, and the cracked hash yields credentials with administrative privileges",
-        "url":"https://github.com/het-desai/hackthebox/blob/main/active/write-up.md"
+        "url":"https://raw.githubusercontent.com/het-desai/hackthebox/refs/heads/main/active/write-up.md"
     },
     {
         "plateform": "Cheat Sheet",
@@ -105,18 +111,18 @@
         "plateform": "Offsec",
         "machine": "Levram",
         "description": "An Nmap scan revealed open port 8000 hosting a Gerapy web application. Default admin credentials provided access to the panel, where an authenticated RCE exploit (CVE-2021-43857) was leveraged to gain an initial foothold. After stabilizing the shell, local enumeration uncovered two privilege escalation vectors: a python3.10 binary with the cap_setuid=ep capability and a plaintext root password stored in a systemd service file. Exploiting either path granted root privileges and full system compromise on Levram.",
-        "url":"https://github.com/het-desai/Offsec-CTF/blob/main/Practice/Levram/write-up.md"
+        "url":"https://raw.githubusercontent.com/het-desai/Offsec-CTF/refs/heads/main/Practice/Levram/write-up.md"
     },
     {
         "plateform": "Offsec",
         "machine": "Internal",
         "description": "This report documents the successful compromise of a Windows Server 2008 Internal machine from the OffSec Practice lab. The system was vulnerable to the SMBv2 Negotiation Vulnerability (CVE-2009-3103), which allowed unauthenticated remote code execution. Using Metasploit, SYSTEM-level access was achieved, and the proof file was retrieved. The exercise highlights the risks of unpatched legacy SMB services and the importance of timely vulnerability management.",
-        "url":"https://github.com/het-desai/Offsec-CTF/blob/main/Practice/Internal/write-up.md"
+        "url":"https://raw.githubusercontent.com/het-desai/Offsec-CTF/refs/heads/main/Practice/Internal/write-up.md"
     },
     {
         "plateform": "Offsec",
         "machine": "Algernon",
         "description": "This report outlines the compromise of the Algernon machine from the OffSec Practice lab through a structured enumeration and exploitation workflow. A thorough port scan revealed an exposed .NET Remoting service on port 17001, which led to the identification of an unauthenticated SmarterMail RCE vulnerability (CVE-2019-7214). Using a publicly available exploit, SYSTEM‑level access was obtained and the proof file was retrieved. The assessment highlights the value of comprehensive enumeration and targeted vulnerability research when attacking Windows-based systems.",
-        "url":"https://github.com/het-desai/Offsec-CTF/blob/main/Practice/Algernon/write-up.md"
+        "url":"https://raw.githubusercontent.com/het-desai/Offsec-CTF/refs/heads/main/Practice/Algernon/write-up.md"
     }
 ]

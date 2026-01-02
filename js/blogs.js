@@ -38,7 +38,11 @@ function displayRepos(filteredEntries) {
             
             // Add a click event listener to the row
             row.addEventListener('click', () => {
-                window.open(entry.url, '_blank');
+                if (entry.plateform.includes('HackTheBox') || entry.plateform.includes('TryHackMe') || entry.plateform.includes('Offsec')) {
+                    window.open('/viewmd/index.html#' + entry.url, '_blank');
+                } else {
+                    window.open(entry.url, '_blank');
+                }
             });
 
             // Add a class to indicate it's clickable (optional)

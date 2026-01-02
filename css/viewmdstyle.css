@@ -1,0 +1,54 @@
+/* General body formating start here */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu', 'Arial', sans-serif;
+    background-color: #333333;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+/* General body formating end here */
+
+/* Markdown formating start here */
+#markdown-content {
+    color: white;
+    text-align: justify;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#markdown-content img {
+    height: auto;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    display: block;
+    margin: auto;
+}
+
+#markdown-content pre {
+    padding: 10px;
+    background-color: black;
+    max-width: 100%;
+    overflow-x: auto;
+    white-space: pre;
+}
+
+#markdown-content code {
+    white-space: pre;
+    background-color: black;
+    color: orange;
+    font-size: 1.1em;
+}
+
+#markdown-content p a {
+    color: yellow;
+}
+/* Markdown formating end here */
