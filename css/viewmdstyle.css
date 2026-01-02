@@ -56,3 +56,11 @@ body {
     color: yellow;
 }
 /* Markdown formating end here */
+
+/* Screen adjustment formating start here */
+@media screen and (max-width: 768px) {
+    #markdown-content {
+        max-width: 350px;
+    }
+}
+/* Screen adjustment formating end here */
