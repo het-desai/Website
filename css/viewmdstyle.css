@@ -1,4 +1,4 @@
-/* General body formating start here */
+/* General body formatting start here */
 body {
     margin: 0;
     padding: 0;
@@ -9,58 +9,116 @@ body {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
     min-height: 100vh;
-    margin: 0;
 }
-/* General body formating end here */
+/* General body formatting end here */
 
-/* Markdown formating start here */
+
+/* Markdown formatting start here */
 #markdown-content {
     color: white;
     text-align: justify;
     max-width: 800px;
     margin: 0 auto;
+    padding: 20px; /* IMPORTANT for mobile breathing space */
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 
+/* Prevent long hashes/strings from overflowing */
+#markdown-content p {
+    overflow-wrap: anywhere;
+    word-break: break-word;
+}
+
+/* Images */
 #markdown-content img {
-    height: auto;
     max-width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    height: auto;
     display: block;
-    margin: auto;
+    margin: 15px auto;
+    border-radius: 6px;
 }
 
+/* Code blocks */
 #markdown-content pre {
-    padding: 10px;
+    padding: 12px;
     background-color: black;
     max-width: 100%;
     overflow-x: auto;
     white-space: pre;
+    border-radius: 6px;
 }
 
+/* Inline code */
 #markdown-content code {
     white-space: pre;
     background-color: black;
     color: orange;
-    font-size: 1.1em;
+    font-size: 1em;
 }
 
+/* Inline code (inside paragraphs) */
+#markdown-content p code {
+    background-color: black;
+    color: orange;
+    font-size: 1em;
+
+    /* KEY FIX */
+    white-space: normal;
+    word-break: break-word;
+    overflow-wrap: anywhere;
+}
+
+/* Links */
 #markdown-content p a {
     color: yellow;
+    word-break: break-word; /* Prevent overflow */
 }
-/* Markdown formating end here */
 
-/* Screen adjustment formating start here */
+/* Tables (very important for mobile) */
+#markdown-content table {
+    width: 100%;
+    border-collapse: collapse;
+    overflow-x: auto;
+    display: block; /* Enables horizontal scroll */
+}
+
+#markdown-content th,
+#markdown-content td {
+    padding: 8px;
+    border: 1px solid #555;
+    text-align: left;
+    white-space: nowrap;
+}
+
+/* Headings spacing */
+#markdown-content h1,
+#markdown-content h2,
+#markdown-content h3 {
+    margin-top: 24px;
+    margin-bottom: 12px;
+}
+/* Markdown formatting end here */
+
+
+/* Screen adjustment formatting start here */
 @media screen and (max-width: 768px) {
+
     #markdown-content {
-        max-width: 350px;
+        max-width: 100%; /* FULL width on mobile */
+        padding: 15px;
+        font-size: 1em;
+    }
+
+    #markdown-content code {
+        font-size: 1em;
+    }
+
+    #markdown-content pre {
+        font-size: 1em;
     }
 }
-/* Screen adjustment formating end here */
+/* Screen adjustment formatting end here */
