@@ -124,5 +124,11 @@
         "machine": "Algernon",
         "description": "This report outlines the compromise of the Algernon machine from the OffSec Practice lab through a structured enumeration and exploitation workflow. A thorough port scan revealed an exposed .NET Remoting service on port 17001, which led to the identification of an unauthenticated SmarterMail RCE vulnerability (CVE-2019-7214). Using a publicly available exploit, SYSTEM‑level access was obtained and the proof file was retrieved. The assessment highlights the value of comprehensive enumeration and targeted vulnerability research when attacking Windows-based systems.",
         "url":"https://raw.githubusercontent.com/het-desai/Offsec-CTF/refs/heads/main/Practice/Algernon/write-up.md"
+    },
+    {
+        "plateform": "Offsec",
+        "machine": "Access",
+        "description": "Windows Active Directory environment, combining web exploitation with AD attacks. Tools such as Nmap, ffuf, Kerbrute, BloodHound, Rubeus, Hashcat, and custom privilege escalation exploits were used to achieve SYSTEM-level access.",
+        "url":"https://raw.githubusercontent.com/het-desai/Offsec-CTF/refs/heads/main/Practice/Access/write-up.md"
     }
 ]

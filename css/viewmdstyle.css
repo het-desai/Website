@@ -103,6 +103,22 @@ body {
 }
 /* Markdown formatting end here */
 
+/* Error message formatting start here */
+#error-message {
+    font-family: 'Ubuntu', 'Arial', sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+    color: red;
+    display: none;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+/* Error message formatting end here */
+
 
 /* Screen adjustment formatting start here */
 @media screen and (max-width: 768px) {

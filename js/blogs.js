@@ -70,7 +70,7 @@ document.addEventListener('DOMContentLoaded', async function () {
 
     const repos = await readLocalJSON();
 
-    // 👉 Show all entries on page load
+    // Show all entries on page load
     displayRepos(repos);
 
     // Search input behavior
