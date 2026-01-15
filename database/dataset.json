@@ -130,5 +130,11 @@
         "machine": "Access",
         "description": "Windows Active Directory environment, combining web exploitation with AD attacks. Tools such as Nmap, ffuf, Kerbrute, BloodHound, Rubeus, Hashcat, and custom privilege escalation exploits were used to achieve SYSTEM-level access.",
         "url":"https://raw.githubusercontent.com/het-desai/Offsec-CTF/refs/heads/main/Practice/Access/write-up.md"
+    },
+    {
+        "plateform": "Offsec",
+        "machine": "Heist",
+        "description": "Active Directory compromise driven by credential exposure and permission abuse rather than traditional exploits. The attack leveraged tools like BloodHound for AD enumeration, NTLM hash capture and cracking for initial access, abuse of ReadGMSAPassword to obtain gMSA credentials, and SeRestorePrivilege to escalate to SYSTEM. It highlights how chaining common misconfigurations and legitimate Windows features can lead from a low-privileged foothold to complete domain-level compromise.",
+        "url":"https://raw.githubusercontent.com/het-desai/Offsec-CTF/refs/heads/main/Practice/Heist/write-up.md"
     }
 ]
