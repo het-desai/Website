@@ -136,5 +136,11 @@
         "machine": "Heist",
         "description": "Active Directory compromise driven by credential exposure and permission abuse rather than traditional exploits. The attack leveraged tools like BloodHound for AD enumeration, NTLM hash capture and cracking for initial access, abuse of ReadGMSAPassword to obtain gMSA credentials, and SeRestorePrivilege to escalate to SYSTEM. It highlights how chaining common misconfigurations and legitimate Windows features can lead from a low-privileged foothold to complete domain-level compromise.",
         "url":"https://raw.githubusercontent.com/het-desai/Offsec-CTF/refs/heads/main/Practice/Heist/write-up.md"
+    },
+    {
+        "plateform": "Offsec",
+        "machine": "Nagoya",
+        "description": "Active Directory attack chain involving network enumeration, Kerberos attacks, SMB abuse, and privilege escalation. Tools such as Nmap, CrackMapExec, Kerbrute, Impacket, BloodHound, Hashcat, and Evil-WinRM were used to perform techniques including username enumeration, password spraying, Kerberoasting, credential harvesting, and service account abuse. The challenge highlights how small misconfigurations can be chained together to achieve domain-level access.",
+        "url":"https://raw.githubusercontent.com/het-desai/Offsec-CTF/refs/heads/main/Practice/Nagoya/write-up.md"
     }
 ]
