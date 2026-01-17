@@ -142,5 +142,11 @@
         "machine": "Nagoya",
         "description": "Active Directory attack chain involving network enumeration, Kerberos attacks, SMB abuse, and privilege escalation. Tools such as Nmap, CrackMapExec, Kerbrute, Impacket, BloodHound, Hashcat, and Evil-WinRM were used to perform techniques including username enumeration, password spraying, Kerberoasting, credential harvesting, and service account abuse. The challenge highlights how small misconfigurations can be chained together to achieve domain-level access.",
         "url":"https://raw.githubusercontent.com/het-desai/Offsec-CTF/refs/heads/main/Practice/Nagoya/write-up.md"
+    },
+    {
+        "plateform": "Offsec",
+        "machine": "Hokkaido",
+        "description": "Active Directory attack chain using Nmap, Kerbrute, CrackMapExec, Impacket, BloodHound, and Hashcat. Techniques include Kerberos-based attacks, SMB enumeration, credential reuse, MSSQL abuse, and privilege escalation via delegated AD permissions.",
+        "url":"https://raw.githubusercontent.com/het-desai/Offsec-CTF/refs/heads/main/Practice/Hokkaido/write-up.md"
     }
 ]
