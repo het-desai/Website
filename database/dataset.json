@@ -148,5 +148,11 @@
         "machine": "Hokkaido",
         "description": "Active Directory attack chain using Nmap, Kerbrute, CrackMapExec, Impacket, BloodHound, and Hashcat. Techniques include Kerberos-based attacks, SMB enumeration, credential reuse, MSSQL abuse, and privilege escalation via delegated AD permissions.",
         "url":"https://raw.githubusercontent.com/het-desai/Offsec-CTF/refs/heads/main/Practice/Hokkaido/write-up.md"
+    },
+    {
+        "plateform": "Offsec",
+        "machine": "Vault",
+        "description": "Active Directory domain controller was compromised by enumerating exposed services using Nmap and identifying a writable SMB share. NTLM credentials were captured via NTLM coercion using ntlm_theft and Responder, cracked with Hashcat, and used to gain initial access through WinRM with evil-winrm-py. Privilege escalation was achieved through SeRestorePrivilege abuse and Group Policy Object (GPO) modification using PowerView and SharpGPOAbuse, resulting in full administrative control.",
+        "url":"https://raw.githubusercontent.com/het-desai/Offsec-CTF/refs/heads/main/Practice/Vault/write-up.md"
     }
 ]
