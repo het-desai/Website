@@ -48,7 +48,7 @@ function displayRepos(entries) {
                 entry.plateform.includes('TryHackMe') ||
                 entry.plateform.includes('Offsec')
             ) {
-                window.open('/viewmd/index.html#' + entry.url, '_blank');
+                window.open('/viewmd/index.html?src=' + encodeURIComponent(entry.url), '_blank');
             } else {
                 window.open(entry.url, '_blank');
             }

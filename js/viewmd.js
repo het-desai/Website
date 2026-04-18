@@ -3,11 +3,17 @@ function fetchMarkdown() {
 
     let errorDiv = document.getElementById('error-message');
 
-    currentUrl = window.location.href;
+    const params = new URLSearchParams(window.location.search);
+    let writeupUrl = params.get('src');
 
-    const splitUrl = currentUrl.split('#');
+    // Clean the URL immediately — removes ?src=... from the address bar
+    history.replaceState(null, '', '/viewmd/index.html');
 
-    let writeupUrl = splitUrl[1];
+    if (!writeupUrl) {
+        errorDiv.textContent = 'No content URL provided.';
+        errorDiv.style.display = 'block';
+        return;
+    }
 
     let validUsers = ['het-desai']; // Add more allowed users to this list
 
@@ -15,13 +21,9 @@ function fetchMarkdown() {
     let isValidUser = validUsers.some(user => writeupUrl.startsWith('https://raw.githubusercontent.com/' + user));
 
     if (isValidUser) {
-        markdownUrl = writeupUrl;
-
-        fetch(markdownUrl)
+        fetch(writeupUrl)
             .then(response => response.text())
             .then(markdown => {
-                // console.log("Markdown fetched successfully:", markdown);
-
                 // Error message
                 errorDiv.style.display = 'none';
 
@@ -48,17 +50,13 @@ function replaceGitHubImageUrls(html) {
     // Regular expression to find GitHub image URLs (blob format)
     const regex = /https:\/\/github\.com\/([^/]+)\/([^/]+)\/blob\/([^"']+\.(jpg|jpeg|png|gif|svg|bmp|webp))/g;
 
-    // Match all occurrences of the regex in the HTML string
     let matches;
     while ((matches = regex.exec(html)) !== null) {
-        // matches[0] is the full URL matched, e.g., https://github.com/username/repo/blob/branch/path/to/image.png
-
         const [fullMatch, user, repo, path] = matches;
 
         // Construct the raw URL for the image
         const rawUrl = `https://raw.githubusercontent.com/${user}/${repo}/${path}`;
 
-        // Replace the matched blob URL with the raw URL in the HTML content
         html = html.replace(fullMatch, rawUrl);
     }
 
