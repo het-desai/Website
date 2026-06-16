@@ -106,6 +106,55 @@
   letter-spacing: 0.12em;
 }
 
+/* Social links inside team card */
+.person-social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 8px;
+  margin-top: 20px;
+}
+.social-label {
+  font-family: var(--font-m);
+  font-size: 10px;
+  color: var(--text-3);
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  padding-right: 12px;
+  border-right: 1px solid var(--border);
+  margin-right: 4px;
+  white-space: nowrap;
+}
+.person-social a {
+  width: 34px;
+  height: 34px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: var(--r);
+  background: var(--bg-0);
+  border: 1px solid var(--border);
+  color: var(--text-2);
+  font-size: 14px;
+  text-decoration: none;
+  -webkit-transition: all var(--t);
+  transition: all var(--t);
+}
+.person-social a:hover {
+  color: var(--accent);
+  border-color: var(--accent-ring);
+  background: var(--accent-glow);
+}
+
 /* dot-grid visual panel */
 .mission-visual {
   background: var(--bg-card);
@@ -167,10 +216,12 @@
 
 .team-photo {
   width: 100%;
-  aspect-ratio: 1;
-  border-radius: var(--r-lg);
+  aspect-ratio: 3/4;
+  border-radius: 20px;
   -o-object-fit: cover;
      object-fit: cover;
+  -o-object-position: center top;
+     object-position: center top;
   border: 1px solid var(--border);
 }
 
