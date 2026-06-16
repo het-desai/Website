@@ -1,110 +1,142 @@
-/* General styling */
-body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Ubuntu', 'Arial', sans-serif;
-    background-color: #333333;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex; /* This line must for footer */
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column; /* This line must for footer */
-    min-height: 100vh; /* This line must for footer */
-    margin: 0; /* This line must for footer */
+/* ============================================================
+   NUMERIC SECURITY — RESEARCH HUB PAGE  |  blogstyle.css
+   ============================================================ */
+
+/* ——— PAGE HERO ——— */
+.page-hero {
+  background: var(--bg-0);
+  border-bottom: 1px solid var(--border);
+  padding: 64px 28px;
+  position: relative;
+  overflow: hidden;
+}
+.page-hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(rgba(57,255,20,0.07) 1px, transparent 1px);
+  background-size: 36px 36px;
+  pointer-events: none;
+}
+.page-hero-inner {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  position: relative;
+}
+.page-hero h1 {
+  font-family: var(--font-h);
+  font-size: clamp(32px, 4.5vw, 52px);
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  margin-bottom: 12px;
+}
+.page-hero p {
+  font-size: 16px;
+  color: var(--text-2);
+  line-height: 1.7;
+  max-width: 480px;
 }
 
-.title-text {
-    margin: 10px;
-    padding: 10px;
-    color: white;
-    text-align: center;
-}
-
-
-/* blogs-container styling */
+/* ——— BLOG BODY ——— */
 .blogs-container {
-    text-align: center;
-    padding: 20px;
-    height: 72vh;
-    -webkit-box-flex: 1;
-    -ms-flex: 1;
-    flex: 1;
-    overflow: auto;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  max-width: var(--max-w);
+  margin: 0 auto;
+  width: 100%;
+  padding: 48px 28px 72px;
 }
 
-/* Search bar styling */
-.search-bar {
-    margin-bottom: 20px;
-}
+/* ——— SEARCH BAR — hooks preserved for blogs.js ——— */
+.search-bar { margin-bottom: 32px; }
 
 .search-bar input {
-    padding: 10px;
-    margin-right: 10px;
-    width: 70%;
-    background-color: #333333;
-    border: none;
-    border-bottom: 2px solid white;
-    -webkit-transition: border-bottom 0.3s ease;
-    -o-transition: border-bottom 0.3s ease;
-    transition: border-bottom 0.3s ease;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    outline: none;
-    color: white;
-    font-size: 16px;
+  width: 100%;
+  max-width: 520px;
+  font-family: var(--font-b);
+  font-size: 15px;
+  color: var(--text-1);
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--r);
+  padding: 12px 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  outline: none;
+  -webkit-transition: border-color var(--t), -webkit-box-shadow var(--t);
+  transition: border-color var(--t), -webkit-box-shadow var(--t);
+  transition: border-color var(--t), box-shadow var(--t);
+  transition: border-color var(--t), box-shadow var(--t), -webkit-box-shadow var(--t);
 }
-
+.search-bar input::-webkit-input-placeholder { color: var(--text-3); }
+.search-bar input::-moz-placeholder { color: var(--text-3); }
+.search-bar input:-ms-input-placeholder { color: var(--text-3); }
+.search-bar input::-ms-input-placeholder { color: var(--text-3); }
+.search-bar input::placeholder { color: var(--text-3); }
 .search-bar input:focus {
-    border-bottom: 2px solid #39FF14;
+  border-color: var(--accent-ring);
+  -webkit-box-shadow: 0 0 0 3px var(--accent-glow);
+          box-shadow: 0 0 0 3px var(--accent-glow);
 }
 
-/* Search results table styling */
+/* ——— RESULTS TABLE — structure preserved for blogs.js ——— */
 .result-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px; /* Adjust margin as needed */
-
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid var(--border);
+  border-radius: var(--r-lg);
+  overflow: hidden;
 }
 
-.result-table th,
+.result-table thead { background: var(--bg-card); }
+
+.result-table th {
+  font-family: var(--font-m);
+  font-size: 11px;
+  color: var(--text-2);
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  padding: 14px 20px;
+  text-align: left;
+  border-bottom: 1px solid var(--border);
+}
+.result-table th:first-child { width: 18%; }
+.result-table th:last-child  { width: 82%; }
+
 .result-table td {
-    border: 1px solid white; /* Adjust border color as needed */
-    padding: 10px;
-    text-align: left;
-    text-decoration: none;
-    color: white;
+  padding: 16px 20px;
+  font-size: 14.5px;
+  color: var(--text-1);
+  border-bottom: 1px solid var(--border);
+  vertical-align: middle;
 }
-
-.result-table th:first-child,
 .result-table td:first-child {
-    width: 10%;
-    text-align: center;
+  font-family: var(--font-m);
+  font-size: 11.5px;
+  color: var(--accent);
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  text-align: center;
 }
 
-.result-table th:last-child,
-.result-table td:last-child {
-    width: 90%;
-}
+.result-table tbody tr:last-child td { border-bottom: none; }
+.result-table tbody tr:nth-child(odd)  { background: var(--bg-card); }
+.result-table tbody tr:nth-child(even) { background: transparent; }
 
-/* Maintain odd/even row colors */
-.result-table tbody > tr:nth-child(odd) {
-    background-color: #222;
+.result-table tbody tr:hover td {
+  background: var(--accent-glow);
+  cursor: pointer;
 }
+.result-table tbody tr:hover td:first-child { color: var(--accent); }
 
-.result-table tbody > tr:nth-child(even) {
-    background-color: #333;
-}
+.clickable-row { cursor: pointer; }
 
-/* Add hover effect for clickable rows */
-.result-table tbody > tr:hover td {
-    background-color: #39FF14;
-    color: black;
-    cursor: pointer;
-}
-
-/* Optional: Add a pointer cursor to clickable rows */
-.clickable-row {
-    cursor: pointer;
+/* ——— RESPONSIVE ——— */
+@media (max-width: 640px) {
+  .page-hero { padding: 48px 20px; }
+  .blogs-container { padding: 36px 20px 60px; }
+  .search-bar input { max-width: 100%; }
+  .result-table th:first-child { width: 28%; }
+  .result-table th:last-child  { width: 72%; }
 }

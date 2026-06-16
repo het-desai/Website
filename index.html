@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <!-- Google tag (gtag.js) -->
+  <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q40ELCCK4L"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -26,126 +25,231 @@
     </script>
     <!-- End Google Tag Manager -->
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Numeric Security</title>
-    <link rel="stylesheet" href="css/homestyle.css">
-    <link rel="stylesheet" href="css/defaultstyle.css">
-    <link rel="stylesheet" href="css/contactstyle.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.css"
-        integrity="sha512-tx5+1LWHez1QiaXlAyDwzdBTfDjX07GMapQoFTS74wkcPMsI3So0KYmFe6EHZjI8+eSG0ljBlAQc3PQ5BTaZtQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Numêric Security — professional penetration testing, security research, and cybersecurity education.">
+  <title>Numêric Security - Cybersecurity Services & Research</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Styles (default first so CSS vars are available) -->
+  <link rel="stylesheet" href="css/defaultstyle.css">
+  <link rel="stylesheet" href="css/homestyle.css">
+  <link rel="stylesheet" href="css/contactstyle.css">
 </head>
 
 <body>
-    <!-- Google Tag Manager (noscript) -->
+  <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W4572N8C" height="0" width="0"
             style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
 
-    <!-- Navigation bar -->
-    <header>
-        <nav>
-            <div class="logo"><a href="/"><img src="img/numericlogo.png" alt="Icon"></a></div>
-            <ul class="nav-list">
-                <li class="navItem"><a href="/">Home</a></li>
-                <li class="navItem"><a href="/blogs">Blogs</a></li>
-                <li class="navItem"><a href="/about">About</a></li>
-                <li class="navItem"><a href="/#contact">Contact us</a></li>
-            </ul>
-            <div class="menu-toggle">&#9776;</div>
-        </nav>
-    </header>
+  <!-- ═══════════════════════════ NAV ═══════════════════════════ -->
+  <header>
+    <nav>
+      <div class="logo"><a href="/"><img src="img/numericlogo.png" alt="Numêric Security"></a></div>
+      <ul class="nav-list">
+        <li class="navItem"><a href="/">Home</a></li>
+        <li class="navItem"><a href="/#services">Services</a></li>
+        <li class="navItem"><a href="/blogs">Research</a></li>
+        <li class="navItem"><a href="/about">About</a></li>
+        <li class="navItem nav-cta"><a href="/#contact">Get in Touch</a></li>
+      </ul>
+      <button class="menu-toggle" aria-label="Open navigation">&#9776;</button>
+    </nav>
+  </header>
 
-    <!-- First division for poster -->
-    <div class="image-division">
-        <img src="img/homePageBackground2.jpeg" alt="Home Screen Wallpaper">
-        <div class="text-overlay">
-            <h1>Num&#234;ric</h1>
-            <p>Anything & Everything about Cybersecurity...</p>
+  <!-- ═══════════════════════════ HERO ═══════════════════════════ -->
+  <section class="hero">
+    <div class="hero-bg-img"></div>
+    <div class="hero-fade"></div>
+    <div class="hero-content">
+      <div class="hero-tag">Cybersecurity Services &amp; Research</div>
+      <h1>We Find Vulnerabilities.<br><em>Before Attackers Do.</em></h1>
+      <p class="hero-sub">Expert penetration testing, threat research, and security education for organisations that take their security seriously.</p>
+      <div class="hero-btns">
+        <a href="/#contact" class="btn-primary">Request an Assessment <i class="fa-solid fa-arrow-right"></i></a>
+        <a href="/blogs"    class="btn-outline">Explore Research <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+    </div>
+    <!-- scroll-indicator: controlled by home.js -->
+    <div id="scroll-indicator"><i class="fa-solid fa-chevron-down"></i></div>
+  </section>
+
+  <!-- ════════════════════════ SERVICES ════════════════════════ -->
+  <section class="services-section" id="services">
+    <div class="services-inner">
+      <div class="section-eyebrow">What We Do</div>
+      <h2 class="section-title">Comprehensive Security Services</h2>
+      <p class="section-sub">We combine real-world attack experience with deep technical knowledge to protect your systems and educate your teams.</p>
+
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="svc-icon"><i class="fa-solid fa-shield-halved"></i></div>
+          <h3>Penetration Testing</h3>
+          <p>We simulate real-world attacks to identify and responsibly exploit vulnerabilities in your networks, web applications, and infrastructure before malicious actors do.</p>
         </div>
-        <div class="down-arrow" id="scroll-indicator">
-            <i class="fa-solid fa-chevron-down fa-2xl"></i>
+        <div class="service-card">
+          <div class="svc-icon"><i class="fa-solid fa-magnifying-glass-chart"></i></div>
+          <h3>Security Research</h3>
+          <p>In-depth vulnerability research, CVE analysis, and threat intelligence. We publish detailed technical write-ups so the wider community can stay ahead of emerging threats.</p>
         </div>
+        <div class="service-card">
+          <div class="svc-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+          <h3>Training &amp; Education</h3>
+          <p>CTF walkthroughs, certification guides, and practical cheat sheets designed to build hands-on skills for security professionals at every level.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════ STATS ════════════════════════ -->
+  <div class="stats-band">
+    <div class="stats-inner">
+      <div class="stat-item">
+        <div class="stat-num">4+</div>
+        <div class="stat-label">Years in Security</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num">4+</div>
+        <div class="stat-label">Certifications</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num">50+</div>
+        <div class="stat-label">Security Challenges</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num">20+</div>
+        <div class="stat-label">Research Articles</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ════════════════════════ RECENT POSTS ════════════════════════ -->
+  <section class="posts-section">
+    <div class="posts-header">
+      <div>
+        <div class="section-eyebrow">Knowledge Hub</div>
+        <h2 class="section-title">Latest Research</h2>
+      </div>
+      <a href="/blogs" class="see-all">View all research <i class="fa-solid fa-arrow-right"></i></a>
     </div>
 
-    <!-- Second division for recent updates -->
-    <div class="recent-content-container">
-        <h2 class="title-text">Recent Blogs</h2>
-        <div class="content-division">
-            <div class="sub-division">
-                <div class="sub-content">
-                    <a href="https://www.numericsec.com/viewmd/index.html?src=https://raw.githubusercontent.com/het-desai/Offsec-CTF/refs/heads/main/Practice/Resourced/write-up.md"
-                        target="_blank">
-                        <img src="img/blog1.jpg" alt="Blog 1 Image">
-                    </a>
-                    <p>Offsec (Prctice): Resourced</p>
-                </div>
-            </div>
-            <div class="sub-division">
-                <div class="sub-content">
-                    <a href="https://www.numericsec.com/viewmd/index.html?src=https://raw.githubusercontent.com/het-desai/Offsec-CTF/refs/heads/main/Practice/Vault/write-up.md" target="_blank">
-                        <img src="img/blog2.jpg" alt="Blog 2 Image">
-                    </a>
-                    <p>Offsec (Prctice): Vault</p>
-                </div>
-            </div>
-            <div class="sub-division">
-                <div class="sub-content">
-                    <a href="https://www.numericsec.com/viewmd/index.html?src=https://raw.githubusercontent.com/het-desai/Offsec-CTF/refs/heads/main/Practice/Hokkaido/write-up.md" target="_blank">
-                        <img src="img/blog3.jpg" alt="Blog 3 Image">
-                    </a>
-                    <p>Offsec (Prctice): Hokkaido</p>
-                </div>
-            </div>
+    <div class="posts-grid">
+      <a href="https://www.numericsec.com/viewmd/index.html?src=https://raw.githubusercontent.com/het-desai/Offsec-CTF/refs/heads/main/Practice/Resourced/write-up.md" target="_blank" class="post-card">
+        <img src="img/blog1.jpg" alt="Resourced write-up" class="post-card-img">
+        <div class="post-body">
+          <span class="post-tag">Offsec</span>
+          <h3>Resourced - Active Directory Exploitation Walkthrough</h3>
         </div>
+      </a>
+      <a href="https://www.numericsec.com/viewmd/index.html?src=https://raw.githubusercontent.com/het-desai/Offsec-CTF/refs/heads/main/Practice/Vault/write-up.md" target="_blank" class="post-card">
+        <img src="img/blog2.jpg" alt="Vault write-up" class="post-card-img">
+        <div class="post-body">
+          <span class="post-tag">Offsec</span>
+          <h3>Vault - Privilege Escalation &amp; Lateral Movement</h3>
+        </div>
+      </a>
+      <a href="https://www.numericsec.com/viewmd/index.html?src=https://raw.githubusercontent.com/het-desai/Offsec-CTF/refs/heads/main/Practice/Hokkaido/write-up.md" target="_blank" class="post-card">
+        <img src="img/blog3.jpg" alt="Hokkaido write-up" class="post-card-img">
+        <div class="post-body">
+          <span class="post-tag">Offsec</span>
+          <h3>Hokkaido - Web Application Attack Chain</h3>
+        </div>
+      </a>
     </div>
+  </section>
 
-    <!-- Third division for contact form -->
-    <section id="contact">
-        <div class="contact-container">
-            <h2 class="title-text">Contact us</h2>
-            <form class="contact-form" netlify>
-                <div class="form-group">
-                    <input type="text" name="first_name" placeholder="First Name" required>
-                </div>
-                <div class="form-group">
-                    <input type="text" name="last_name" placeholder="Last Name" required>
-                </div>
-                <div class="form-group">
-                    <input type="email" name="email" placeholder="Email" required>
-                </div>
-                <div class="form-group">
-                    <input type="text" name="subject" placeholder="Subject" required>
-                </div>
-                <div class="form-group">
-                    <textarea name="message" placeholder="Message" rows="5" required></textarea>
-                </div>
-                <div class="form-group">
-                    <button type="submit">Submit</button>
-                </div>
-            </form>
+  <!-- ════════════════════════ CONTACT ════════════════════════ -->
+  <section id="contact" class="contact-section">
+    <div class="contact-inner">
+
+      <!-- Left: info -->
+      <div class="contact-info">
+        <div class="section-eyebrow">Get In Touch</div>
+        <h2 class="section-title">Let's Secure<br>Your Systems.</h2>
+        <p class="section-sub">Have a security concern or want to discuss a project? Send us a message and we'll respond promptly.</p>
+        <ul class="contact-details">
+          <li><i class="fa-solid fa-shield-halved"></i> Penetration Testing Inquiries</li>
+          <li><i class="fa-solid fa-file-shield"></i> Vulnerability Assessments</li>
+          <li><i class="fa-solid fa-comments"></i> General Security Consultation</li>
+        </ul>
+      </div>
+
+      <!-- Right: form — classes & input names preserved for contact-us.js -->
+      <div class="contact-form-wrap">
+        <form class="contact-form" data-netlify-recaptcha="true" data-netlify="true" netlify>
+          <div class="form-row">
+            <div class="form-group"><input type="text"  name="first_name" placeholder="First Name"     required></div>
+            <div class="form-group"><input type="text"  name="last_name"  placeholder="Last Name"      required></div>
+          </div>
+          <div class="form-group"><input type="email"   name="email"      placeholder="Email Address"  required></div>
+          <div class="form-group"><input type="text"    name="subject"    placeholder="Subject"         required></div>
+          <div class="form-group"><textarea             name="message"    placeholder="How can we help?" rows="5" required></textarea></div>
+          <div data-netlify-recaptcha="true"></div>
+          <div class="form-group"><button type="submit">Send Message <i class="fa-solid fa-arrow-right"></i></button></div>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ════════════════════════ FOOTER ════════════════════════ -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <img src="img/numericlogo.png" alt="Numêric Security" class="brand-logo">
+          <p>Professional cybersecurity services, threat research, and security education for the modern digital landscape.</p>
+          <div class="footer-social">
+            <a href="https://www.linkedin.com/in/het-d" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://www.x.com/Het__Desai"        target="_blank" aria-label="X / Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="https://www.medium.com/@zeronumeric"   target="_blank" aria-label="Medium"><i class="fa-brands fa-medium"></i></a>
+            <a href="https://github.com/het-desai"       target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          </div>
         </div>
-    </section>
-
-    <!-- footer -->
-    <footer>
-        <div class="social-medias">
-            <a href="https://www.linkedin.com/in/het-d" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-            <a href="https://www.x.com/Het__Desai" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
-            <a href="https://www.medium.com/@zeronumeric" target="_blank"><i class="fa-brands fa-medium"></i></a>
-            <a href="https://github.com/het-desai" target="_blank"><i class="fa-brands fa-github"></i></a>
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="/#services">Penetration Testing</a></li>
+            <li><a href="/#services">Security Research</a></li>
+            <li><a href="/#services">Training &amp; CTF</a></li>
+            <li><a href="/#contact">Get in Touch</a></li>
+          </ul>
         </div>
-        <div class="copyrightmarks">
-            <p>&#169; Num&#234;ric</p>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="/about">About Us</a></li>
+            <li><a href="/blogs">Research Hub</a></li>
+            <li><a href="/#contact">Contact</a></li>
+          </ul>
         </div>
-    </footer>
+        <div class="footer-col">
+          <h4>Connect</h4>
+          <ul>
+            <li><a href="https://www.medium.com/@zeronumeric"        target="_blank">Medium</a></li>
+            <li><a href="https://github.com/het-desai"        target="_blank">GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/het-d"  target="_blank">LinkedIn</a></li>
+            <li><a href="https://www.x.com/Het__Desai"         target="_blank">Twitter / X</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="copyright">&#169; Num&#234;ric Security. All rights reserved.</p>
+        <p class="tagline">Securing the digital world, one system at a time.</p>
+      </div>
+    </div>
+  </footer>
 
-    <script src="js/default.js"></script>
-    <script src="js/home.js"></script>
-    <script src="js/contact-us.js"></script>
-
+  <script src="js/default.js"></script>
+  <script src="js/home.js"></script>
+  <script src="js/contact-us.js"></script>
 </body>
-
 </html>
