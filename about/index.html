@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Theme toggle page script -->
+  <script>(function(){var t=localStorage.getItem('ns-theme');if(t)document.documentElement.setAttribute('data-theme',t);})();</script>
+
   <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q40ELCCK4L"></script>
     <script>
@@ -58,6 +61,7 @@
         <li class="navItem"><a href="/about">About</a></li>
         <li class="navItem nav-cta"><a href="/#contact">Get in Touch</a></li>
       </ul>
+      <button class="theme-toggle" aria-label="Toggle light/dark theme"></button>
       <button class="menu-toggle" aria-label="Open navigation">&#9776;</button>
     </nav>
   </header>
@@ -119,7 +123,7 @@
               <div class="label">Certifications</div>
             </div>
             <div class="person-stat">
-              <div class="num">50+</div>
+              <div class="num">100+</div>
               <div class="label">Challenges Solved</div>
             </div>
             <div class="person-stat">
@@ -212,5 +216,6 @@
   </footer>
 
   <script src="../js/default.js"></script>
+  <script src="../js/theme-toggle.js"></script>
 </body>
 </html>

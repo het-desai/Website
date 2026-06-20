@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.5.15,
+* Autoprefixer: v10.5.0
+* Browsers: last 4 version
+*/
+
 /* ============================================================
    NUMERIC SECURITY — RESEARCH HUB PAGE  |  blogstyle.css
    ============================================================ */
@@ -114,7 +121,7 @@
 .result-table td:first-child {
   font-family: var(--font-m);
   font-size: 11.5px;
-  color: var(--accent);
+  color: var(--accent-text);
   font-weight: 500;
   letter-spacing: 0.04em;
   text-align: center;
@@ -128,7 +135,7 @@
   background: var(--accent-glow);
   cursor: pointer;
 }
-.result-table tbody tr:hover td:first-child { color: var(--accent); }
+.result-table tbody tr:hover td:first-child { color: var(--accent-text); }
 
 .clickable-row { cursor: pointer; }
 

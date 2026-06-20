@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.5.15,
+* Autoprefixer: v10.5.0
+* Browsers: last 4 version
+*/
+
 /* ============================================================
    NUMERIC SECURITY — MARKDOWN VIEWER  |  viewmdstyle.css
    ============================================================ */
@@ -73,7 +80,7 @@
 }
 
 #markdown-content p a {
-  color: var(--accent);
+  color: var(--accent-text);
   word-break: break-word;
   text-decoration: none;
   border-bottom: 1px solid var(--accent-ring);
